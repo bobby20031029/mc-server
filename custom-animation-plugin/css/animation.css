@@ -1,0 +1,56 @@
+/* 插件动画样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #fff;
+  }
+  
+  .blurred-wrapper {
+    height: 100vh;
+    background: url(https://worthbuy.com.au/wp-content/uploads/1.jpg) center/cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
+  }
+  
+  @keyframes hue {
+    from {
+      filter: hue-rotate(0);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  .main-header {
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .btn {
+    padding: 1rem 2.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2.5rem;
+    color: #fff;
+  }
+  
